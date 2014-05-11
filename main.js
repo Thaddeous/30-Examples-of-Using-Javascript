@@ -21,7 +21,7 @@ var pens = [
 	ledType: 4,
 	diameter: 1.5,
 	make: "bic",
-	model: "girly girl"
+	model: "girly"
 },
 {
 	color: "green",
@@ -45,88 +45,164 @@ var pens = [
 	ledType: 1,
 	diameter:0.6,
 	make: "monami",
-	model: "red devil"
+	model: "devil"
 }
 ]
 
-// Examples of .map ============================
+console.log("================ .map Starts ================")
+
+// Examples of .map =================================
 // map 1
 var penColorMapArray = pens.map(function(co) {
 	return co.color;
 })
-console.log(penColorMapArray)
+console.log("penColorMapArray = " + penColorMapArray)
 
 
 // map 2
 var penClipMapArray = pens.map(function(cl) {
 	return cl.clip;
 })
-console.log(penClipMapArray)
+console.log("penClipMapArray = " + penClipMapArray)
 
 
 // map 3
 var penEraserMapArray = pens.map(function(er) {
 	return er.eraser
 })
-console.log(penEraserMapArray) 
+console.log("penEraserMapArray = " + penEraserMapArray) 
 
 
 // map 4
 var penInkColorMapArray = pens.map(function(ic) {
 	return ic.inkColor;
 })
-console.log(penInkColorMapArray)
+console.log("penInkColorMapArray = " + penInkColorMapArray)
 
 
 // map 5
 var penGripMapArray = pens.map(function(gp) {
 	return gp.grip;
 })
-console.log(penGripMapArray)
+console.log("penGripMapArray = " + penGripMapArray)
 
 
 // map 6
 var penSizeMapArray = pens.map(function(sz) {
 	return sz.size;
 })
-console.log(penSizeMapArray)
+console.log("penSizeMapArray = " + penSizeMapArray)
 
 
 // map 7
 var penLedTypeMapArray = pens.map(function(lt) {
 	return lt.ledType
 })
-console.log(penLedTypeMapArray)
+console.log("penLedTypeMapArray = " + penLedTypeMapArray)
 
 
 // map 8
 var penDiameterMapArray = pens.map(function(dm) {
-	return dm.diamter
+	return dm.diameter
 })
-console.log(penDiameterMapArray)
+console.log("penDiameterMapArray = " + penDiameterMapArray)
 
 
 // map 9
 var penMakeMapArray = pens.map(function(mk) {
 	return mk.make
 })
-console.log(penMakeMapArray)
+console.log("penMakeMapArray = " + penMakeMapArray)
 
 
 // map 10
 var penModelMapArray = pens.map(function(md) {
 	return md.model
 })
-console.log(penModelMapArray)
+console.log("penModelMapArray = " + penModelMapArray)
 
 
-// Examples of .reduce =========================
+console.log("================ .reduce Starts ================")
+
+
+// Examples of .reduce =====================================================
 // reduce 1
-
-
-console.log(penSizeMapArray.reduce(function(a, b) {
+var penColorReduceArray = penColorMapArray.reduce(function(a, b) {
 	return a + b;
-}))
+})
+console.log("penColorReduceArray = " + penColorReduceArray)
+
+
+// reduce 2
+var penClipReduceArray = penClipMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penClipReduceArray = " + penClipReduceArray)
+
+
+// reduce 3
+var penEraserReduceArray = penEraserMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penEraserReduceArray = " + penEraserReduceArray)
+
+
+// reduce 4
+var penInkColorReduceArray = penInkColorMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penInkColorReduceArray = " + penInkColorReduceArray)
+
+
+// reduce 5
+var penGripReduceArray = penGripMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penGripReduceArray = " + penGripReduceArray)
+
+
+// reduce 6
+var penSizeReduceArray = penSizeMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penSizeReduceArray = " + penSizeReduceArray)
+
+
+// reduce 7
+var penLedTypeReduceArray = penLedTypeMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penLedTypeReduceArray = " + penLedTypeReduceArray)
+
+
+// reduce 8
+var penDiameterReduceArray = penDiameterMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penDiameterReduceArray = " + penDiameterReduceArray)
+
+
+// reduce 9
+var penMakeReduceArray = penMakeMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penMakeReduceArray = " + penMakeReduceArray)
+
+
+// reduce 10
+var penModelReduceArray = penModelMapArray.reduce(function(a, b) {
+	return a + b;
+})
+console.log("penModelReduceArray = " + penModelReduceArray)
+
+
+console.log("================ .forEach Starts ================")
+
+
+
+
+
+
 
 // work done with on average
 // (function(x, y) {
