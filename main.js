@@ -1,3 +1,4 @@
+
 var pens = [
 {
 	color: "black",
@@ -49,9 +50,9 @@ var pens = [
 }
 ]
 
-console.log("================ .map Starts ================")
 
-// Examples of .map =================================
+
+console.log("================ .map Starts ================")
 // map 1
 var penColorMapArray = pens.map(function(co) {
 	return co.color;
@@ -122,10 +123,8 @@ var penModelMapArray = pens.map(function(md) {
 console.log("penModelMapArray = " + penModelMapArray)
 
 
+
 console.log("================ .reduce Starts ================")
-
-
-// Examples of .reduce =====================================================
 // reduce 1
 var penColorReduceArray = penColorMapArray.reduce(function(a, b) {
 	return a + b;
@@ -196,35 +195,73 @@ var penModelReduceArray = penModelMapArray.reduce(function(a, b) {
 console.log("penModelReduceArray = " + penModelReduceArray)
 
 
+
 console.log("================ .forEach Starts ================")
+// forEach 1
+penColorMapArray.forEach(function(pcma) {
+	console.log("The pen color is: " + pcma)
+})
+
+
+// forEach 2
+penClipMapArray.forEach(function(pclma) {
+	console.log("This pen has a clip: " + pclma)
+})
+
+
+// forEach 3
+penEraserMapArray.forEach(function(pema) {
+	console.log("This pen has an eraser: " + pema)
+})
+
+
+// forEach 4
+penInkColorMapArray.forEach(function(picma) {
+	console.log("The pen ink color is: " + picma)
+})
+
+
+// forEach 5
+penGripMapArray.forEach(function(pgma) {
+	console.log("This pen has a grip: " + pgma)
+})
+
+
+// forEach 6
+penSizeMapArray.forEach(function(psma) {
+	psma++;
+	console.log(psma)
+})
+
+
+// forEach 7
+penLedTypeMapArray.forEach(function(pltma) {
+	pltma++;
+	console.log(pltma)
+})
+
+
+// forEach 8
+penDiameterMapArray.forEach(function(pdma) {
+	pdma++;
+	console.log(pdma)
+})
+
+
+// forEach 9
+penMakeMapArray.forEach(function(pMma) {
+	console.log("The pen is made by: " + pMma)
+})
+
+
+// forEach 10
+penModelMapArray.forEach(function(pmma) {
+	console.log("The pen model is: " + pmma)
+})
 
 
 
-
-
-
-
-// work done with on average
-// (function(x, y) {
-// 	return x / y.length
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log("================ Random Comments and Functions Start ================")
 // function average (size) {
 // 	var total = size.reduce(function(a, b){
 // 	return a + b
@@ -232,21 +269,6 @@ console.log("================ .forEach Starts ================")
 // return total / size.length;
 // }
 
-
-
-
-
-
-
-
-
-
-
-// // var pens.reduce = function() {	
-// // }
-
-// // var pens.forEach = function() {	
-// // }
 
 // var square = function(x) {
 // 	return x * x;
