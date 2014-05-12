@@ -50,8 +50,6 @@ var pens = [
 }
 ]
 
-
-
 console.log("================ .map Starts ================")
 // map 1
 var penColorMapArray = pens.map(function(co) {
@@ -316,7 +314,8 @@ console.log("================ Random Comments and Functions Start ==============
 // 	age: 10,
 // 	weight: 3,
 // 	size: 25,
-// }
+// };
+
 
 // function futureWeight (x) {
 // 	return baby.weight * 1.7;
